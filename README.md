@@ -5,6 +5,7 @@ main находится в app.py
 1. - save note
 2. - find and read note
 3. - edit note
+4. - delete note
 0. - exit
 
 ## возможности
