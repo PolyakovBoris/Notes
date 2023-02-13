@@ -2,8 +2,10 @@ import json
 from save_note import save_note
 
 def edit_note():
-    print ('input id of note for edit ->')
-    user_input = input ()
+    user_input = ""
+    while not user_input.isdigit():
+        print ('input id of note for edit ->')
+        user_input = input ()
     with open("data.json", "r") as file:       
         while True:
             line = file.readline()

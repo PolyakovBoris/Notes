@@ -1,4 +1,5 @@
 import sys
+from delete_note import delete_note
 from edit_note import edit_note
 from read_note import find_id_note, find_note_with_date, find_text_in_notes, find_title_note
 from save_note import save_note
@@ -7,7 +8,8 @@ def main_menu():
     while True:
         print ('1 - save note')
         print ('2 - find and read note')
-        print ('3 - edit note')
+        print ('3 - edit note by ID')
+        print ('4 - delete note by ID')
         print ('0 - exit')
         user_input = input ()
         
@@ -18,6 +20,8 @@ def main_menu():
                 find_note_menu()
             case "3":
                 edit_note()
+            case "4":
+                delete_note()    
             case "0":
                 sys.exit()
 
